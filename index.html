@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8f2e7">
-    <meta name="description" content="A little home for the recipes our family loves.">
-    <title>Symons Family Recipes</title>
+    <meta name="description" content="A home for our recipes.">
+    <title>SFR</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
@@ -27,9 +27,9 @@
     <main id="main">
       <section class="welcome" id="top" aria-labelledby="welcome-title">
         <div class="welcome-copy">
-          <h1 id="welcome-title">Made with love!<br></h1>
-          <p class="welcome-note">A digital collection of family recipes, created + maintained by Isabelle.</p>
-          <a class="browse-link" href="#desserts">Wander through the recipes <span aria-hidden="true">↓</span></a>
+          <h1 id="welcome-title">Family Recipes<br></h1>
+          <p class="welcome-note">A digital collection of recipes and cooking tips from many people over the years, created + maintained by Isabelle.</p>
+          <a class="browse-link" href="#desserts">Have a look <span aria-hidden="true">↓</span></a>
         </div>
         <div class="welcome-art" aria-label="A lemon illustration">
           <span class="art-sparkle sparkle-one" aria-hidden="true">✳</span>
@@ -41,11 +41,9 @@
       <section class="browse-section" aria-labelledby="browse-title">
         <div class="section-heading">
           <p class="eyebrow">Find something...</p>
-          <h2 id="browse-title">Browse</h2>
         </div>
         <div class="browse-tools">
           <label class="search-label" for="recipe-search">Search recipes</label>
-          <input id="recipe-search" type="search" placeholder="Try lemon, pudding..." autocomplete="off">
           <div class="tag-list" aria-label="Filter recipes by tag">
             <button class="tag-button is-active" type="button" data-tag="all" aria-pressed="true">All recipes</button>
             <button class="tag-button" type="button" data-tag="lemon" aria-pressed="false">Lemon</button>
@@ -53,7 +51,7 @@
             <button class="tag-button" type="button" data-tag="family-favourite" aria-pressed="false">Family favourites</button>
           </div>
           <p class="result-count" id="result-count" aria-live="polite"></p>
-          <p class="no-results" id="no-results" hidden>No recipes found just now. Try another word or tag.</p>
+          <p class="no-results" id="no-results" hidden>Nothing found. Try another word or tag.</p>
         </div>
       </section>
 
@@ -85,7 +83,7 @@
             </div>
             <div class="recipe-card-content">
               <h3><a href="recipes/lemon-cup-pudding.html">Lemon Cup Pudding</a></h3>
-              <p class="recipe-intro">Very simple self-saucing pudding with a strong lemon flavour.</p>
+              <p class="recipe-intro">Very simple self-saucing pudding with a strong lemon flavour. Called "cup" because it's measured in cups.</p>
               <div class="recipe-tags" aria-label="Recipe tags">
                 <span>Lemon</span>
                 <span>Pudding</span>
@@ -103,7 +101,7 @@
           <span class="archive-flower">✿</span>
         </div>
         <div class="archive-copy">
-          <h2 id="archive-title">The Archive</h2>
+          <h2 id="archive-title">Archive</h2>
           <p>Digital scans of handwritten notes, typed menus, magazine clippings, etc.</p>
           <span class="archive-link-label">Visit the archive <span aria-hidden="true">→</span></span>
         </div>
