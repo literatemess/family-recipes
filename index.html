@@ -20,16 +20,15 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#mains">Mains</a>
         <a href="#desserts">Desserts</a>
-        <a href="#archive">The Archive</a>
+        <a href="archive.html">The Archive</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="welcome" id="top" aria-labelledby="welcome-title">
         <div class="welcome-copy">
-          <p class="eyebrow">A little something passed around the table</p>
           <h1 id="welcome-title">Recipes made<br><span>with love.</span></h1>
-          <p class="welcome-note">A growing collection of family favourites, handwritten memories, and the good things we make again and again.</p>
+          <p class="welcome-note">A digital collection of family favourites, handwritten memories, and the good things we make again and again.</p>
           <a class="browse-link" href="#desserts">Wander through the recipes <span aria-hidden="true">↓</span></a>
         </div>
         <div class="welcome-art" aria-label="A lemon illustration">
@@ -48,6 +47,7 @@
         </div>
         <div class="browse-tools">
           <label class="search-label" for="recipe-search">Search recipes</label>
+          <input id="recipe-search" type="search" placeholder="Try lemon, pudding..." autocomplete="off">
           <div class="tag-list" aria-label="Filter recipes by tag">
             <button class="tag-button is-active" type="button" data-tag="all" aria-pressed="true">All recipes</button>
             <button class="tag-button" type="button" data-tag="lemon" aria-pressed="false">Lemon</button>
@@ -63,70 +63,53 @@
         <div class="category-heading">
           <span class="category-flower" aria-hidden="true">✿</span>
           <div>
-            <p class="eyebrow">For the middle of the table</p>
             <h2 id="mains-title">Mains</h2>
           </div>
           <span class="category-rule" aria-hidden="true"></span>
         </div>
-        <p class="empty-note">This page is waiting for its first main-course recipe. There’s always room for one more at the table.</p>
+        <p class="empty-note">To be added.</p>
       </section>
 
       <section class="recipe-section" id="desserts" data-recipe-section aria-labelledby="desserts-title">
         <div class="category-heading">
           <span class="category-flower" aria-hidden="true">✿</span>
           <div>
-            <p class="eyebrow">Something sweet to finish</p>
             <h2 id="desserts-title">Desserts</h2>
           </div>
           <span class="category-rule" aria-hidden="true"></span>
         </div>
 
-        <article class="recipe-card" data-tags="lemon pudding family-favourite">
-          <div class="recipe-card-top">
-            <span class="recipe-number">No. 001</span>
-            <span class="recipe-doodle" aria-hidden="true">🍋</span>
-          </div>
-          <div class="recipe-card-content">
-            <h3>Lemon Cup Pudding</h3>
-            <p class="recipe-intro">Very simple self-saucing pudding with a strong lemon flavour.</p>
-            <div class="recipe-tags" aria-label="Recipe tags">
-              <span>Lemon</span>
-              <span>Pudding</span>
-              <span>Family favourite</span>
+        <div class="recipe-list">
+          <article class="recipe-card" data-tags="lemon pudding family-favourite">
+            <div class="recipe-card-top">
+              <span class="recipe-number">No. 001</span>
+              <span class="recipe-doodle" aria-hidden="true">🍋</span>
             </div>
-            <p class="serves">— serves 4 —</p>
-            <div class="recipe-columns">
-              <div>
-                <h4>Ingredients</h4>
-                <ul>
-                  <li>1 cup caster sugar</li>
-                  <li>60g butter</li>
-                  <li>1 tbsp/⅓ cup plain flour — don't use self-raising!</li>
-                  <li>Zest and juice of 2 lemons</li>
-                  <li>1 cup milk</li>
-                  <li>2 eggs, separated</li>
-                </ul>
+            <div class="recipe-card-content">
+              <h3><a href="recipes/lemon-cup-pudding.html">Lemon Cup Pudding</a></h3>
+              <p class="recipe-intro">Very simple self-saucing pudding with a strong lemon flavour.</p>
+              <div class="recipe-tags" aria-label="Recipe tags">
+                <span>Lemon</span>
+                <span>Pudding</span>
+                <span>Family favourite</span>
               </div>
-              <div class="method-note">
-                <h4>Method</h4>
-                <p>The method is still to come. Add the family instructions here when you’re ready.</p>
-              </div>
+              <span class="recipe-card-cta">Open recipe <span aria-hidden="true">→</span></span>
             </div>
-            <p class="recipe-source">From the family recipe box <span aria-hidden="true">♡</span></p>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
 
-      <section class="archive-section" id="archive" aria-labelledby="archive-title">
+      <a class="archive-section" id="archive" href="archive.html">
         <div class="archive-art" aria-hidden="true">
           <span class="archive-paper"></span>
           <span class="archive-flower">✿</span>
         </div>
         <div class="archive-copy">
           <h2 id="archive-title">The Archive</h2>
-          <p>Digital scans of handwritten, typed, magazine clippings, etc.</p>
+          <p>Digital scans of handwritten notes, typed menus, magazine clippings, etc.</p>
+          <span class="archive-link-label">Visit the archive <span aria-hidden="true">→</span></span>
         </div>
-      </section>
+      </a>
     </main>
 
     <footer class="site-footer">

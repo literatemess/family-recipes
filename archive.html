@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f2e7">
+    <meta name="description" content="Scans and stories from the Symons family recipe archive.">
+    <title>The Paper Archive | Symons Family Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="archive.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to archive</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="index.html#top" aria-label="Symons Family Recipes home">
+        <span class="wordmark-icon" aria-hidden="true">✿</span>
+        <span>Symons Family<br>Recipes</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#mains">Mains</a>
+        <a href="index.html#desserts">Desserts</a>
+        <a href="archive.html" aria-current="page">The Archive</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="archive-welcome" aria-labelledby="archive-title">
+        <a class="back-link" href="index.html">← Back to the recipe box</a>
+        <p class="eyebrow">The family paper trail</p>
+        <h1 id="archive-title">The Paper <span>Archive</span></h1>
+        <p class="welcome-note">A place for the original cards, clippings, and handwritten treasures—kept with their stories and the people they came from.</p>
+        <span class="archive-welcome-stamp" aria-hidden="true">KEPT<br>WITH<br>LOVE</span>
+      </section>
+
+      <section class="browse-section archive-browse" aria-labelledby="archive-browse-title">
+        <div class="section-heading">
+          <p class="eyebrow">Follow the little clues</p>
+          <h2 id="archive-browse-title">Browse the papers</h2>
+        </div>
+        <div class="browse-tools">
+          <label class="search-label" for="archive-search">Search the archive</label>
+          <input id="archive-search" type="search" placeholder="Try a name, dish, or note..." autocomplete="off">
+          <div class="tag-list" aria-label="Filter archive items by tag">
+            <button class="tag-button is-active" type="button" data-tag="all" aria-pressed="true">Everything</button>
+            <button class="tag-button" type="button" data-tag="grandmother" aria-pressed="false">Grandmother</button>
+            <button class="tag-button" type="button" data-tag="magazine" aria-pressed="false">Magazine</button>
+            <button class="tag-button" type="button" data-tag="handwritten" aria-pressed="false">Handwritten</button>
+            <button class="tag-button" type="button" data-tag="typed" aria-pressed="false">Typed</button>
+          </div>
+          <p class="result-count" id="archive-result-count" aria-live="polite"></p>
+          <p class="no-results" id="archive-no-results" hidden>No papers match that search. Try another name or tag.</p>
+        </div>
+      </section>
+
+      <section class="archive-index" aria-label="Archived recipe documents">
+        <div class="archive-index-heading">
+          <span class="category-flower" aria-hidden="true">✿</span>
+          <p>Every scrap has a story</p>
+          <span class="category-rule" aria-hidden="true"></span>
+        </div>
+
+        <p class="archive-empty" id="archive-empty">
+          The archive is ready for its first scan. Add a document below and tag it with who it came from, where it was found, or how it was written.
+        </p>
+
+        <div class="archive-grid" id="archive-grid"></div>
+      </section>
+
+      <template id="archive-entry-template">
+        <article class="archive-entry" data-tags="grandmother handwritten">
+          <a class="archive-scan" href="images/archive/recipe-card.jpg">
+            <img src="images/archive/recipe-card.jpg" alt="Scan of the original recipe card">
+            <span class="scan-open">View original ↗</span>
+          </a>
+          <div class="archive-entry-copy">
+            <p class="archive-entry-number">Document No. 001</p>
+            <h2>Recipe card title</h2>
+            <p class="archive-entry-note">Add a short note about this recipe or document.</p>
+            <dl class="archive-details">
+              <div><dt>From</dt><dd>Grandmother</dd></div>
+              <div><dt>Type</dt><dd>Handwritten recipe card</dd></div>
+            </dl>
+            <div class="recipe-tags" aria-label="Document tags">
+              <span>Grandmother</span>
+              <span>Handwritten</span>
+            </div>
+          </div>
+        </article>
+      </template>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made by Isabelle <span aria-hidden="true">♡</span></p>
+      <a href="index.html">Back to the recipe box ↑</a>
+    </footer>
+  </body>
+</html>
